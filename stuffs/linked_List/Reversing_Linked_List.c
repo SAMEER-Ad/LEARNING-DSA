@@ -6,8 +6,12 @@ struct node
     int data;
     struct node *link;
 };
-
-
+// to reverse
+//
+//
+//
+//
+//hehehehe
 struct node* Reverse(struct node *head)
 {
     struct node *temp = NULL;
@@ -17,7 +21,7 @@ struct node* Reverse(struct node *head)
         temp2 = head->link;
         head->link = temp;
         temp = head;
-        head = temp;
+        head = temp2;
     }
     head= temp;
     return head;
