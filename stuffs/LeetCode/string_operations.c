@@ -6,5 +6,8 @@
 
 int main(){
     char c[100];
-    
+    printf("hey");
+
+
+    //
 }
