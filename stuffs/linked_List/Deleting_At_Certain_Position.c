@@ -72,12 +72,12 @@ struct node *delete_at_certain(struct node *head, int data, int count)
     {
         struct node *previous = head;
         struct node *current = head;
-        for (int i = 0; i < data - 1; i++)
+        for (int i = 0; i < data - 1; i++)//can make better
         {
             previous = current;
             current = current->link;
         }
-        previous->link = current->link;
+         previous->link = current->link;
         free(current);
         return head;
     }
