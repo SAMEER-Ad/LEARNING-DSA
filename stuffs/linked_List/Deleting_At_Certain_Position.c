@@ -70,7 +70,7 @@ struct node *delete_at_certain(struct node *head, int data, int count)
     }
     else
     {
-        struct node *previous = head;
+        struct node *previous = head;//can make better
         struct node *current = head;
         for (int i = 0; i < data - 1; i++)//can make better
         {
@@ -96,7 +96,7 @@ int main()
     int data;
     scanf("%d", &data);
     int count;
-    count = count_nodes(head);
+      count = count_nodes(head);
 
     head = delete_at_certain(head, data, count);
     PrintNodes(head);
