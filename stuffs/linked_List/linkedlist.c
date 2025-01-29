@@ -1,14 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
- // Define the node structure
-    struct node {
-        int data;
-        struct node* next;
-    };
+
+// Define the node structure
+struct node {
+    int data;
+    struct node* next;
+};
+
+// Function to print the linked list
+void printList(struct node* head) {
+    struct node* current = head;
+    while (current != NULL) {
+        printf("%d ", current->data);  // Print the data of the current node
+        current = current->next;       // Move to the next node
+    }
+    printf("\n");
+}
 
 int main() {
-   
-
     // Create the head node
     struct node* head = (struct node*)malloc(sizeof(struct node));
     head->data = 1;
@@ -26,8 +35,8 @@ int main() {
     temp2->next = NULL;
     temp->next = temp2;  // Link the second node to the third node
 
-    // Print the linked list
-     printf("%d %d %d ",head->data,head->next->data,head->next->next->data);
+    // Print the linked list using the new function
+    printList(head);
 
     return 0;
 }
