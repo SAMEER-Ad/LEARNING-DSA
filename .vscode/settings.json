@@ -2,5 +2,6 @@
     "files.associations": {
         "FIRSSTTCCP.C": "cpp"
     },
-    "CodeGPT.apiKey": "CodeGPT Plus Beta"
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "C_Cpp.default.compilerPath": "C:/MinGW/bin/gcc.exe"
 }
